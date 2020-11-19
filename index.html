@@ -12,7 +12,7 @@
     
     <div class="container">
         <div class="row row-0">
-            <h1 class="heading">ToDo</h1>
+            <h1 class="heading">List Of ToDos</h1>
         </div>
         <div class="row row-1">
             <div class="col-4 m-auto">
@@ -32,14 +32,19 @@
             <div class="col-4 m-auto">
                 <div id="main" class="card card-body">
                     <form action="" class="form-inline mb-3">
-                        <input type="text" class="form-control mr-2">
+                        <input id="input" type="text" class="form-control mr-2">
                         <button id="btn" type="button" class="btn btn-dark">Add</button>
                     </form>
-                    <ul id="items" class="list-group">
-                        <li class="list-group-item">Item 1</li>
-                        <li class="list-group-item">Item 2</li>
+                    <ul id="items" class="list-group d-flex justify-content-between">
+                        <!-- <li class="list-group-item">
+                            <div class="d-flex justify-content-between">
+                                <p>Item</p>
+                                <button class="btn btn-outline-dark btn-sm m-2">Delete</button>
+                            </div>
+                        </li> -->
+                        <!-- <li class="list-group-item">Item 2</li>
                         <li class="list-group-item">Item 3</li>
-                        <li class="list-group-item">Item 4</li>
+                        <li class="list-group-item">Item 4</li> -->
                     </ul>
                 </div>
             </div>
@@ -50,8 +55,8 @@
             </div>
         </div>
     </div>
-
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="index.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
 </body>
 </html>
