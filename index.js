@@ -17,7 +17,7 @@ $('#search-item').keyup((e) => {
 
  showList = todo_list => {
     $('#items').children().remove();
-    todo_list.map(item => $('#items').append('<li class="list-group-item"><div class="d-flex justify-content-between"><p>'+item+'</p><button class="btn-del btn btn-outline-dark btn-sm m-2">Delete</button></div></li>')); 
+    todo_list.map(item => $('#items').append('<li class="list-group-item"><div class="d-flex justify-content-between"><input type="checkbox" ><p>'+item+'</p><button class="btn-del btn btn-outline-dark btn-sm m-2">Delete</button></div></li>')); 
     
     $('.btn-del').click((item) => {
         console.log(item);
